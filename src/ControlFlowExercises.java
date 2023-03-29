@@ -37,6 +37,9 @@ public class ControlFlowExercises {
             x += 2;
         } while (x <= 100);
 
+//        long = i 2 (?)
+
+
 
     }
 }
