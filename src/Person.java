@@ -2,6 +2,11 @@ public class Person {
 
     private String name;
 
+    public Person(){}
+
+    public Person (String name){
+        this.name = name;
+    }
     public String getName() {
 //TODO: return the person's name
         return name;
@@ -12,8 +17,9 @@ public class Person {
         this.name = name;
     }
 
-    public void sayHello() {
+    public String sayHello() {
 //TODO: print a message to the console using the person's name
+        return String.format("Hello, %s", this.name);
     }
 
     public static void main(String[] args) {
@@ -25,5 +31,15 @@ public class Person {
         Person lily = new Person();
         lily.setName("Lily");
         System.out.println(lily.getName());
+
+        //    Understanding References
+
+        Person person1 = new Person("John");
+        Person person2 = new Person("John");
+        System.out.println(person1.getName().equals(person2.getName()));
+        System.out.println(person1 == person2);
+
     }
+
+
 }
