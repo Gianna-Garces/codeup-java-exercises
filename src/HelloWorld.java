@@ -121,7 +121,7 @@ public class HelloWorld {
 //
 //                How is the above example different from the code block below?
 
-        int three = (int) "three";
+//        int three = (int) "three";
 
 //      Error: String cannot be converted to int
 
@@ -159,12 +159,12 @@ public class HelloWorld {
 //
 //Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
 
-        int num = 214748364700;
+//        int number = 214748364700;
 
 //        int num too large, with 00 added to the end
 
-        int num = Integer.MAX_VALUE;
-        System.out.println(num);
+        int number = Integer.MAX_VALUE +1;
+        System.out.println(number);
 
 
 
